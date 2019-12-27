@@ -19,9 +19,8 @@
 		a{
 			text-decoration: none;
 			color: #000;
-			text-shadow: 2px 2px 0px pink;
-			/*font-weight: bold;*/
-			/*font-size: 30px;*/
+			/*text-shadow: 2px 2px 0px pink;
+			font-size: 30px;*/
 		}
 		#djtx{
 			position: absolute;
@@ -31,21 +30,44 @@
 			color: pink;
 			width: 100px;
 			height: 30px;
+			/*background: #000;*/
 			margin-top: 10px;
 			margin-left: 10px;
 			/*animation: col 2s linear;*/
 		}
 		#main{
 			min-width: 600px;
-			width: 35%;
-			opacity: 0.8;
+			width: 40%;
+			/*opacity: 0.3;*/
 			/*background: #fff;*/
+			/*padding-left: 30px;*/
 			text-align: center;
 			font-size: 25px;
 			line-height: 50px;
 			font-family: FangSong;
 			/*font-weight: bold;*/
 			float: left;
+		}
+		#bt{
+			text-shadow: 2px 2px 0px pink;
+			/*margin-top: 50px;*/
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#sy{
+			position: absolute;
+			left: 0px;
+			width: 50px;
+			height: 30px;
+			font-size: 20px;
+			text-align: left;
+			font-family: FangSong;
+			line-height: 30px;
+			text-shadow: 2px 2px 0px pink;
+			background-color: rgba(255,255,255,0);
+			font-weight: bold;
+			border: none;
+			outline: none;
 		}
 		#pearl{
 			/*min-height: 900px;
@@ -94,13 +116,7 @@
             position: relative;
 			margin: 20px auto;
 		}
-		/*#tu img{
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			margin-top: 20px;
-
-		}*/
+		
 		#tu{
 			/*line-height: 100px;*/
 			background: url(/public/img/ww.png) no-repeat;
@@ -130,25 +146,7 @@
 		#tu:hover{
 			transform: rotate(180deg);
 		}
-		.read{
-			width: 100%;
-			height: 200px;
-			/*opacity: 0.3;*/
-			/*background: #fff;*/
-			background-color: rgba(255,255,255,0.4);
-			border-radius: 15%;
-			margin-top: 50px;
-			margin-left: 30px;
-			/*padding-left: 30px;*/
-			line-height: 50px;
-			/*overflow: auto;*/
-			text-overflow: ellipsis;
-			overflow: hidden;
-			display: -webkit-box;
-			-webkit-line-clamp: 3;
-			-webkit-box-orient: vertical;
-			/*white-space: nowrap;*/
-		}
+		
 		#t1{
 			line-height: 50px;
 			text-align: center;
@@ -157,12 +155,40 @@
 		
 		#t1 li{
 			list-style: none;
+			/*color: #000;*/
 		}
 		#t1 li:hover{
 			
 			text-shadow: 2px 2px 0px pink;
 
 		}
+		#one,#three,#two{
+			background-color: rgba(255,255,255,0.3);
+			margin-top: 50px;
+			padding: 50px;
+			/*text-align: left;*/
+		}
+		#two,#three a{
+			text-overflow: ellipsis;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+		}
+		#three{
+			text-align: left;
+		}
+		#two li{
+			text-align: left;
+			list-style: none;
+			/*color: #000;*/
+		}
+		#three li{
+			text-align: left;
+			list-style: none;
+			/*font-color: #000;*/
+		}
+		
 
 	</style>
 </head>
@@ -172,11 +198,9 @@
 	<div id="djtx"></div>
 	<div id="main">
 
+		<button id="sy" onclick="goBack()"><<<<</button>
 
-		
-<div class="read"> 
-	<!-- <p><a href="/one/2019/12/26/sz.html">三藏</a></p> -->
-	<div id="one">
+		<div id="one">
 	<p id="bt"><a href="/one/2019/12/26/sz.html">三藏</a></p>
 	<p>
 		<p style="font-size: 15px;">演唱 : 蔡翊昇（贰婶）</p>
@@ -218,63 +242,6 @@
 </div>
 
 
-</div>
-
-<div class="read"> 
-	<!-- <p><a href="/two/2019/12/25/tb.html">谈杯</a></p> -->
-	<div id="one">
-	<p id="bt"><a href="/two/2019/12/25/tb.html">谈杯</a></p>
-	<p>
-		<p style="font-size: 15px;">演唱 : 蔡翊昇（贰婶）</p>
-		犀角杯中髓  冻藏关外<br />
-		宜注入芳冽几十载<br />
-		雪拥蓝关到轮台<br />
-		夜光杯中血  涂歃唇腮<br />
-		若笑谈渴饮之敌忾<br />
-		胭脂葡萄  万里蒸埋<br />
-		清风能几筷？<br />
-		流云下酒 当为我浮一大白<br />
-		醉雨泼袍带  就此放浪形骸<br />
-		何须借觥筹<br />
-		浇这江湖块垒  酩酊卧蓬莱<br />
-		掬水而饮  捧掌作杯  岂不快哉？<br />
-		琉璃杯中露  杨枝所溉<br />
-		宜沁入珍珠细酌筛<br />
-		玉沫浮涌滤襟怀<br />
-		翡翠杯中泉  鼓雪而湃<br />
-		梨花趁青旗 倚云栽<br />
-		暗嗅冰蕊  幽若初开<br />
-		清风能几筷？<br />
-		流云下酒 当为我浮一大白<br />
-		醉雨泼袍带  就此放浪形骸<br />
-		何须借觥筹<br />
-		浇这江湖块垒  酩酊卧蓬莱<br />
-		掬水而饮  捧掌作杯  岂不快哉？<br />
-		杜康今安在？<br />
-		不如邀月  且共我吸虹饮海<br />
-		此间最解忧  纵掷千金难买<br />
-		刘伶今安在？<br />
-		好个千秋一枕  须臾眠万代<br />
-		无盏无觞  无胜无败  无挂无碍<br />
-	</p>
-</div>
-
-</div>
-
-
-<div>
-	<br>
-	
-	<a href="javascript:viod(0)">第一页</a>
-	
-	第1页  共2页
-	
-	<a href="/page2">下一页</a>
-	
-</div>
-
-
-		
 
 	</div>
 
@@ -329,10 +296,10 @@
 
 		var a = new Array('o(*￣▽￣*)o','(❤ ω ❤)','(。・∀・)ノ','w(ﾟДﾟ)w','/(ㄒoㄒ)/~~');
 
-		var b = new Array('red','green','blue','purple','#4ef','orange','pink');
+		var b = new Array('red','green','blue','purple','#4ef','orange');
 
 		var randoma = Math.floor((Math.random()*1000000000000)%5);
-		var randomb = Math.floor((Math.random()*1000000000000)%7);
+		var randomb = Math.floor((Math.random()*100000000000000)%6);
 
 		$('#djtx').css('display','block');
 		$('#djtx').css('left',x);
@@ -343,6 +310,9 @@
 
 	})
 
+	function goBack(){
+		window.history.go(-1);
+	}
 </script>
 </body>
 </html>

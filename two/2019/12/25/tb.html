@@ -19,9 +19,8 @@
 		a{
 			text-decoration: none;
 			color: #000;
-			text-shadow: 2px 2px 0px pink;
-			/*font-weight: bold;*/
-			/*font-size: 30px;*/
+			/*text-shadow: 2px 2px 0px pink;
+			font-size: 30px;*/
 		}
 		#djtx{
 			position: absolute;
@@ -31,21 +30,44 @@
 			color: pink;
 			width: 100px;
 			height: 30px;
+			/*background: #000;*/
 			margin-top: 10px;
 			margin-left: 10px;
 			/*animation: col 2s linear;*/
 		}
 		#main{
 			min-width: 600px;
-			width: 35%;
-			opacity: 0.8;
+			width: 40%;
+			/*opacity: 0.3;*/
 			/*background: #fff;*/
+			/*padding-left: 30px;*/
 			text-align: center;
 			font-size: 25px;
 			line-height: 50px;
 			font-family: FangSong;
 			/*font-weight: bold;*/
 			float: left;
+		}
+		#bt{
+			text-shadow: 2px 2px 0px pink;
+			/*margin-top: 50px;*/
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#sy{
+			position: absolute;
+			left: 0px;
+			width: 50px;
+			height: 30px;
+			font-size: 20px;
+			text-align: left;
+			font-family: FangSong;
+			line-height: 30px;
+			text-shadow: 2px 2px 0px pink;
+			background-color: rgba(255,255,255,0);
+			font-weight: bold;
+			border: none;
+			outline: none;
 		}
 		#pearl{
 			/*min-height: 900px;
@@ -94,13 +116,7 @@
             position: relative;
 			margin: 20px auto;
 		}
-		/*#tu img{
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			margin-top: 20px;
-
-		}*/
+		
 		#tu{
 			/*line-height: 100px;*/
 			background: url(/public/img/ww.png) no-repeat;
@@ -130,25 +146,7 @@
 		#tu:hover{
 			transform: rotate(180deg);
 		}
-		.read{
-			width: 100%;
-			height: 200px;
-			/*opacity: 0.3;*/
-			/*background: #fff;*/
-			background-color: rgba(255,255,255,0.4);
-			border-radius: 15%;
-			margin-top: 50px;
-			margin-left: 30px;
-			/*padding-left: 30px;*/
-			line-height: 50px;
-			/*overflow: auto;*/
-			text-overflow: ellipsis;
-			overflow: hidden;
-			display: -webkit-box;
-			-webkit-line-clamp: 3;
-			-webkit-box-orient: vertical;
-			/*white-space: nowrap;*/
-		}
+		
 		#t1{
 			line-height: 50px;
 			text-align: center;
@@ -157,12 +155,40 @@
 		
 		#t1 li{
 			list-style: none;
+			/*color: #000;*/
 		}
 		#t1 li:hover{
 			
 			text-shadow: 2px 2px 0px pink;
 
 		}
+		#one,#three,#two{
+			background-color: rgba(255,255,255,0.3);
+			margin-top: 50px;
+			padding: 50px;
+			/*text-align: left;*/
+		}
+		#two,#three a{
+			text-overflow: ellipsis;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+		}
+		#three{
+			text-align: left;
+		}
+		#two li{
+			text-align: left;
+			list-style: none;
+			/*color: #000;*/
+		}
+		#three li{
+			text-align: left;
+			list-style: none;
+			/*font-color: #000;*/
+		}
+		
 
 	</style>
 </head>
@@ -172,57 +198,9 @@
 	<div id="djtx"></div>
 	<div id="main">
 
+		<button id="sy" onclick="goBack()"><<<<</button>
 
-		
-<div class="read"> 
-	<!-- <p><a href="/one/2019/12/26/sz.html">三藏</a></p> -->
-	<div id="one">
-	<p id="bt"><a href="/one/2019/12/26/sz.html">三藏</a></p>
-	<p>
-		<p style="font-size: 15px;">演唱 : 蔡翊昇（贰婶）</p>
-		仰天之圆望地之方  极目处云起茫茫<br />
-				我闻百川有容而大  至无量<br />
-				一叶穿过闹市林莽  一苇过野浦寒江<br />
-				我见世人啼笑奔忙  遭无妄<br />
-				欲者恋婆娑众相  贪者陷利锁名缰<br />
-				好一似空沙逐浪  我由东  寻一径佛光<br />
-				一藏过往  临风走马长安道<br />
-				也曾是  韶华清朗端方好模样<br />
-				二藏衷肠  从师结友意气扬&amp;<br />
-				也曾对  咫尺江流浩荡念高堂<br />
-				三藏思量  醉里拈花留一笑<br />
-				也曾记  满园春色春光影成双<br />
-				想我今生  藏不得好梦一场<br />
-				且随那  暮鼓晨钟  梵声轻唱<br />
-				步天之苍履地之荒  放眼处纷纷兴亡<br />
-				我知世间万类荣华  皆无常<br />
-				福与祸相应相报  善与恶相欠相偿<br />
-				忽一语悲辛荒唐  我自西  取真言三藏<br />
-				一藏为经  碧草黄杨渐秋霜<br />
-				生必死  寂灭轮回之外有至上<br />
-				二藏以律  幻海诸天修罗场<br />
-				因必果  六根不染自在观八方<br />
-				三藏成论  飞鸟在劫尘寰网<br />
-				难必救  渡厄扶危舍身护迷航<br />
-				誓我今生  慈怀有岸燃灯塔<br />
-				全世法  弘正道  故人当无恙<br />
-				一藏过往  锦斓加身化沧桑<br />
-				割断这  如意烦恼青丝三千丈<br />
-				二藏衷肠  十万八千去路长<br />
-				从今后  萍水聚散旧地亦他乡<br />
-				三藏思量  情之一刹最堪伤<br />
-				在心如火背如芒<br />
-				苦海无边  回头是<br />
-				你在来路  痴痴张望<br />
-	</p>
-</div>
-
-
-</div>
-
-<div class="read"> 
-	<!-- <p><a href="/two/2019/12/25/tb.html">谈杯</a></p> -->
-	<div id="one">
+		<div id="one">
 	<p id="bt"><a href="/two/2019/12/25/tb.html">谈杯</a></p>
 	<p>
 		<p style="font-size: 15px;">演唱 : 蔡翊昇（贰婶）</p>
@@ -259,22 +237,6 @@
 	</p>
 </div>
 
-</div>
-
-
-<div>
-	<br>
-	
-	<a href="javascript:viod(0)">第一页</a>
-	
-	第1页  共2页
-	
-	<a href="/page2">下一页</a>
-	
-</div>
-
-
-		
 
 	</div>
 
@@ -329,10 +291,10 @@
 
 		var a = new Array('o(*￣▽￣*)o','(❤ ω ❤)','(。・∀・)ノ','w(ﾟДﾟ)w','/(ㄒoㄒ)/~~');
 
-		var b = new Array('red','green','blue','purple','#4ef','orange','pink');
+		var b = new Array('red','green','blue','purple','#4ef','orange');
 
 		var randoma = Math.floor((Math.random()*1000000000000)%5);
-		var randomb = Math.floor((Math.random()*1000000000000)%7);
+		var randomb = Math.floor((Math.random()*100000000000000)%6);
 
 		$('#djtx').css('display','block');
 		$('#djtx').css('left',x);
@@ -343,6 +305,9 @@
 
 	})
 
+	function goBack(){
+		window.history.go(-1);
+	}
 </script>
 </body>
 </html>
